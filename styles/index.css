@@ -1,0 +1,133 @@
+
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/bulb.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Roboto&display=swap');
+:root{
+    --main-green: #89C496;
+    --main-blue: #C2D7D8;
+    --main-yellow: #FFC038;
+    --main-grey: #ededed;
+
+    --header-height: 15vh;
+    --hint-height: 10vh;
+    --feedback-height: 5vh;
+
+    --gameplay-cont-height: 80vh;
+}
+
+body {
+    background-color: #FAF8EF;
+    font-family: 'Montserrat';font-size: 22px;
+}
+
+.card-gameplay {
+    flex: 3;
+    transition: flex 1s;
+    transition-timing-function: ease;
+
+    /* border: 1px solid black; */
+}
+
+.card {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, .1);
+    border-radius: 25px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.card-label {
+    font-size: 6vmin;
+}
+
+#cont-category {
+    display: flex;
+    background-color: var(--main-yellow);
+    /* flex: 3; */
+}
+
+#cont-questions {
+    display: flex;
+    background-color: var(--main-blue);
+}
+
+#cont-guess {
+    display: flex;
+    background-color: var(--main-green);
+}
+
+
+#cont-hint {
+    display: flex;
+    flex:2;
+    /* height: var(--hint-height); */
+    background-color: var(--main-grey);    
+}
+
+#cont-feedback {
+    display: flex;
+    flex:1;
+    /* height: var(--feedback-height); */
+    background-color: transparent;
+}
+.card-label-feedback {
+    font-size: 4vmin;
+}
+.card-feedback {
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* CONTAINERS */
+#cont-parent {
+    display:flex;
+    
+    flex: 25;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+    height: 100%;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px;
+
+    
+    align-content: space-around;
+    gap: 2vh;
+}
+
+#cont-gameplay {
+    display:flex;
+    
+    flex: 18;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+    height: var(--gameplay-cont-height);
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    align-content: space-around;
+    gap: 2vh;
+}
+
+#cont-header {
+    display: flex;
+    flex: 4;
+    height: var(--header-height);
+    /* background-color: rgba(0, 0, 0, .1); */
+}
+
+#cont-footer {
+    height: 15vh;
+    display: flex;
+    flex: 3;
+    gap: 2vh;
+    flex-direction: column;
+}
